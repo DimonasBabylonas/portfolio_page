@@ -1,0 +1,11 @@
+{
+  "name": "portfolio_page",
+  "version": "1.0.0",
+  "description": "portfolio_page",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "author": "Babylonas",
+  "license": "ISC"
+}

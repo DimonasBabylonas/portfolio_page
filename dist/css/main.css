@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box; }
+
+.menu-btn {
+  position: absolute;
+  z-index: 3;
+  right: 35px;
+  top: 35px;
+  cursor: pointer;
+  transition: all 0.5s ease-out; }
+  .menu-btn .btn-line {
+    width: 25px;
+    height: 3px;
+    margin: 0 0 5px 0;
+    background: white;
+    transition: all 0.5s ease-out; }
+  .menu-btn.close {
+    transform: rotate(-90deg); }
+    .menu-btn.close .btn-line {
+      width: 25px;
+      height: 8px;
+      margin: 0 0 0px 0;
+      background: #0099ff; }
+
+.menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  visibility: hidden;
+  transition: all 0.5s ease-out; }
+  .menu.show {
+    transition: all 0.5s ease-out;
+    visibility: visible;
+    transform: translate3d(0, 0, 0); }
+  .menu-branding, .menu-nav {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    width: 50%; }
+  .menu-nav {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: rgba(0, 0, 0, 0.541);
+    list-style: none;
+    transform: translate3d(100%, 0, 0);
+    transition: all 0.5s ease-out; }
+    .menu-nav.show {
+      transform: translate3d(0, 0, 0); }
+  .menu-branding {
+    background: rgba(0, 0, 0, 0);
+    transform: translate3d(0, -100%, 0);
+    height: 100vh;
+    transition: all 0.5s ease-out; }
+    .menu-branding.show {
+      transform: translate3d(0, 0, 0); }
+    .menu-branding .menu-photo {
+      width: 250px;
+      height: 250px;
+      background: url("/dist/img/photo.jpg");
+      background-size: cover;
+      border-radius: 20%;
+      border: solid 3px #0099ff; }
+  .menu .nav-link {
+    font-size: 50px; }
+
+body {
+  color: white;
+  background: black;
+  height: 100%;
+  margin: 0;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  line-height: 1.5; }
+  body#bg-img {
+    background: url("../img/background.jpg");
+    background-attachment: fixed;
+    background-size: cover; }
+
+h1,
+h2,
+h3 {
+  text-shadow: 1px 1px 4px #000000;
+  text-align: center;
+  margin: 0;
+  font-weight: 1;
+  font-size: 20px; }
+  h1.lg-heading,
+  h2.lg-heading,
+  h3.lg-heading {
+    margin-top: 10rem;
+    font-size: 4rem; }
+  h1.sm-heading,
+  h2.sm-heading,
+  h3.sm-heading {
+    margin-bottom: 1rem; }
+
+a {
+  color: white;
+  text-decoration: none; }
+
+header {
+  position: fixed;
+  width: 100%; }
+
+.text-secondary {
+  color: #0099ff; }
+
+main {
+  text-align: center;
+  padding: 5rem;
+  height: 100%; }
+  main .icons a {
+    text-shadow: 1px 1px 4px #000000;
+    padding: 0.2rem; }
+    main .icons a:hover {
+      color: #0099ff;
+      transition: all 0.5s ease-out; }
+  main#home {
+    overflow: hidden; }
