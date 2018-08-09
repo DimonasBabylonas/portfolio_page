@@ -5,8 +5,7 @@
   "main": "index.js",
   "homepage": "https://dimonasbabylonas.github.io/portfolio_page",
   "scripts": {
-    "sass": "node-sass -w scss/ -o css/ --recursive",
-    "deploy": "gh-pages -d dist"
+    "sass": "node-sass -w scss/ -o css/ --recursive"
   },
   "author": "Babylonas",
   "license": "ISC",
