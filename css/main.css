@@ -50,7 +50,7 @@
     .menu-nav.show {
       transform: translate3d(0, 0, 0); }
   .menu-branding {
-    background: rgba(0, 0, 0, 0);
+    background: black;
     transform: translate3d(0, -100%, 0);
     height: 100vh;
     transition: all 0.5s ease-out; }
@@ -59,10 +59,10 @@
     .menu-branding .menu-photo {
       width: 250px;
       height: 250px;
-      background: url("/img/photo.jpg");
-      background-size: cover;
       border-radius: 50%;
-      border: solid 3px #0099ff; }
+      border: solid 3px #0099ff;
+      background: url("/img/photo.jpg");
+      background-size: cover; }
   .menu .nav-item.current > a {
     color: #0099ff; }
   .menu .nav-link {

@@ -63,7 +63,7 @@
   }
 
   &-branding {
-    background: rgba(0, 0, 0, 0);
+    background: rgba(0, 0, 0, 9);
     transform: translate3d(0, -100%, 0);
     height: 100vh;
     @include easeOut;
@@ -75,10 +75,10 @@
     .menu-photo {
       width: 250px;
       height: 250px;
-      background: url("/img/photo.jpg");
-      background-size: cover;
       border-radius: 50%;
       border: solid 3px $secondary-color;
+      background: url("/img/photo.jpg");
+      background-size: cover;
     }
   }
   .nav-item {
