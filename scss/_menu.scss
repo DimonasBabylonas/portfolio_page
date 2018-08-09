@@ -63,7 +63,7 @@
   }
 
   &-branding {
-    background: rgba(0, 0, 0, 9);
+    background: rgba(0, 0, 0, 0);
     transform: translate3d(0, -100%, 0);
     height: 100vh;
     @include easeOut;
