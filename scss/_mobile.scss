@@ -1,0 +1,93 @@
+@include mediaXL {
+  .projects img:hover {
+    @include easeOut;
+    width: 95%;
+    opacity: 0.7;
+  }
+}
+
+@include mediaLg {
+  .projects {
+    grid-template-columns: 1fr;
+
+    img:hover {
+      @include easeOut;
+      opacity: 0.7;
+      width: 97%;
+    }
+  }
+}
+
+@include mediaMd {
+  .about-info {
+    grid-template-areas:
+      "bio-photo"
+      "bio"
+      "skillset"
+      "skill1"
+      "skill2"
+      "other";
+    grid-template-columns: 1fr;
+    grid-gap: 5px;
+  }
+  .bio-photo {
+    width: 150px;
+    height: 180px;
+  }
+  .bio {
+    text-align: center;
+    padding: 0;
+    font-size: 20px;
+  }
+  h3 {
+    text-align: center;
+  }
+  .skillset {
+    margin-top: 0px;
+  }
+  .projects {
+    grid-template-columns: 1fr;
+
+    img:hover {
+      @include easeOut;
+      opacity: 0.7;
+      width: 95%;
+    }
+  }
+}
+
+@include mediaSm {
+  ul.menu-nav,
+  div.menu-branding {
+    float: none;
+    width: 100%;
+    min-height: 0;
+  }
+
+  .menu-branding {
+    height: 30vh;
+    .menu-photo {
+      margin-top: 4vh;
+      background: url("/dist/img/photo1.png");
+      background-size: cover;
+      width: 250px;
+      height: 250px;
+      border-radius: 0%;
+      border: none;
+    }
+  }
+
+  .menu-nav {
+    background: rgba(0, 0, 0, 0.9);
+    height: 70vh;
+  }
+  .projects {
+    grid-template-columns: 1fr;
+
+    img:hover {
+      @include easeOut;
+      opacity: 0.7;
+      width: 95%;
+    }
+  }
+}
