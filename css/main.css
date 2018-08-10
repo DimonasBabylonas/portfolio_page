@@ -140,7 +140,7 @@ header {
 
 main {
   text-align: center;
-  padding: 5rem;
+  padding: 2rem 2rem;
   height: 100%; }
   main .icons a {
     text-shadow: 1px 1px 4px #000000;
@@ -262,6 +262,8 @@ main {
       width: 95%; } }
 
 @media screen and (max-width: 500px) {
+  main {
+    padding-top: 0rem; }
   ul.menu-nav,
   div.menu-branding {
     float: none;
@@ -270,11 +272,11 @@ main {
   .menu-branding {
     height: 30vh; }
     .menu-branding .menu-photo {
-      margin-top: 4vh;
+      margin-top: 2vh;
       background: url("../img/photo1.png");
       background-size: cover;
-      width: 250px;
-      height: 250px;
+      width: 150px;
+      height: 150px;
       border-radius: 0%;
       border: none; }
   .menu-nav {
@@ -285,4 +287,13 @@ main {
     .projects img:hover {
       transition: all 0.5s ease-out;
       opacity: 0.7;
-      width: 95%; } }
+      width: 95%; }
+  #work .lg-heading1 {
+    font-size: 40px; }
+  #work .sm-heading1 {
+    font-size: 15px; }
+  #contacts {
+    padding-top: 5rem;
+    display: flex;
+    flex-flow: column;
+    align-items: center; } }
