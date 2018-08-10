@@ -61,7 +61,7 @@
       height: 250px;
       border-radius: 50%;
       border: solid 3px #0099ff;
-      background: url("/img/photo.jpg");
+      background: url("img/photo.jpg");
       background-size: cover; }
   .menu .nav-item.current > a {
     color: #0099ff; }
@@ -271,7 +271,7 @@ main {
     height: 30vh; }
     .menu-branding .menu-photo {
       margin-top: 4vh;
-      background: url("/img/photo1.png");
+      background: url("img/photo1.png");
       background-size: cover;
       width: 250px;
       height: 250px;
